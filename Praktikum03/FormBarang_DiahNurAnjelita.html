@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Barang</title>
+
+    <style>
+        .header p {
+            overflow:hidden;
+            background-color: rgb(212, 207, 207);
+            padding: 0;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p style="text-align:center;"> A Web Page </p>
+        <p> &larr; &rarr; &#10060; &#9962; <textarea cols="150" rows="1"> http:// </textarea></p>
+    </div>
+
+    <div class="menu">
+        <table style="width: 100%; border: 1px solid black;">
+        <tr>
+            <th><a href="#"> Home |</a> </th>
+            <th><a href="#"> Generate Link |</a> </th>
+        </th>
+            <th><a href="#"> Transaction History |</a> </th>
+            <th><a href="#"> Policy |</a> </th>
+            <th><a href="#"> Logout |</a> </th>
+        </tr> 
+        </table>
+    </div>
+
+    <br>
+<div class="content" style="margin-left: 25%;">
+    <form>
+        <table>
+            <tr>
+                <td rowspan="5"> <img src="helm.jpg" alt="helm" width="300px"></td>
+                <td><label for="title">Title Here</label></td>
+                <td>:</td>
+                <td><input type="text" id="title" style="width:236px;"></td>
+            </tr>
+            <tr>
+                <td><label for="Description">Description</label></td>
+                <td>:</td>
+                <td><textarea name="text" rows="20" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Account"> Account Number </label></td>
+                <td>:</td>
+                <td><input type ="number" id="Account" name="Account" style="width: 236px;"></td>
+            </tr>
+            <tr>
+                <td><label for="Bank"> Bank </label></td>
+                <td>:</td>
+                <td><select id="Bank">
+                    <option value="HSBC"> HSBC </option>
+                    <option value="AADC"> AADC </option>
+                    <option value="ADGF"> ADGF </option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="Account Holder"> Account Holder </label></td>
+                <td>:</td>
+                <td><input type="text" class= "Account Holder" name="Account Holder" style="width: 236px;"></td>
+            </tr>
+            <tr>
+                <td rowspan="6" align="top"><button> Upload Picture </button></td>
+            </tr>
+            <tr>
+                <td><label for="Transaction"> Transaction </label></td>
+                <td>:</td>
+                <td><input type="number" id="1" name="1" value="1"></td>
+            </tr>
+            <tr>
+                <td><label for="Phone" style="color: green;"> Send to Mobile Phone</label></td>
+                <td>:</td>
+                <td><input type="checkbox" id="Phone" name="Phone"> </td>
+            </tr>
+            <tr>
+                <td><label for="Email" style="color: green;"> Send to Email</label></td>
+                <td>:</td>
+                <td><input type="checkbox" id="mail" name="Email"></td>
+            </tr>
+            <tr>
+                <td><label for="Mobile Phone"> Send to Mobile Phone </label></td>
+                <td>:</td>
+                <td><input name="number" id="Mobile Phone" name="Mobile Phone" style="width: 236px;"></td>
+            </tr>
+            <tr>
+                <td><label for="Email"> Send to Email </label> </td>
+                <td>:</td>
+                <td><input type="mail" id="Email" name="Email" style="width: 236px;"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+    <form style="text-align: center;">
+        <button style="background-color: green;"> Generate Link </button>
+    </form>
+</body>
+</html>
