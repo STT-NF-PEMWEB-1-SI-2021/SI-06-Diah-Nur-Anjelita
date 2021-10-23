@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<style>
+    body {
+        background-color: rgb(202, 221, 226);
+    }
+</style>
+</head>
+    <h1 style="text-align: center">Form Pemesanan</h1>
+    <p style="text-align: center">Kami hadir untuk memudahkan staycation Anda.</p>
+    <center>
+    <img src="hotel.jpg" alt="hotelnya mamad yang pengen jadi mermaid di pantai ancol yang kata itu dah pokonya dah">
+    </center>
+<body style="text-align: center">
+    <p>Tujuan Utama Perjalanan Anda</p>
+    <ol>
+        <li><input type="radio" name="Perjalanan" value= Liburan checked> Liburan</li>
+        <li><input type="radio" name="Perjalanan" value= Kerja checked> Kerja</li>
+    </ol>
+    <h4>Informasi Pribadi</h4>
+    <form method="POST" action="login.php">
+        Nama Depan : <input type="text" name="Nama Depan"/>
+        Nama Belakang : <input type="text" name="Nama Belakang"/>
+    </form>
+    <form method="POST" action="login.php">
+        No Hp : <input type="text" name="No Hp"/>
+        <br/>
+        Email : <input type="text" name="Email"/>
+        <br/>
+    </form>
+        <h4>Pilihan</h4>
+        <p>
+            <label>Tanggal Booking :
+                <input type="date"/>
+            </label>
+        </p>
+        <p>Tipe Kamar
+        <select name="Kamar">
+            <option>Single Room</option>
+            <option>Double Room</option>
+            <option>Double-double Room</option>
+            <option>Connecting Room</option>
+        </select>
+        </p>
+        <p>Durasi Menginap </p>
+        <select name="Malam">
+            <option>1 Malam</option>
+            <option>2 Malam</option>
+            <option>3 Malam</option>
+            <option>4 Malam</option>
+            <option>5 Malam</option>
+            <option>6 Malam</option>
+        </select>
+        <p>Penginapan Anda termasuk : </p>
+        <form action="/action_page.php">
+        <input type="checkbox" id="penginap" name="penginap" value="Sarapan">
+        <label for="penginap"> Sarapan </label><br>
+        <input type="checkbox" id="hotel" name="hotel" value="AC">
+        <label for="hotel"> AC </label><br>
+        <input type="checkbox" id="nginap" name="nginap" value="TV Layar Datar">
+        <label for="nginap"> TV Layar Datar </label><br>
+        <input type="checkbox" id="inap" name="inap" value="Wifi Gratis">
+        <label for="inap"> Wifi Gratis </label><br>
+        <input type="checkbox" id="hoteel" name="hoteel" value="Pemandangan Gunung">
+        <label for="hoteel"> Pemandangan Gunung </label><br>
+    </form>
+        <p>Merokok</p>
+    <ol>
+        <li><input type="radio" name="Perjalanan" value="Ya" checked> Ya</li>
+        <li><input type="radio" name="Perjalanan" value="Tidak" checked> Tidak</li>
+    </ol>
+    <form method="POST" action="yes">
+        Catatan : <textarea name="Catatan" cols="30" rows="2"></textarea>
+    </form>
+    <p><input type="Submit"></p>
+</body>
+</html>
