@@ -1,0 +1,70 @@
+        * {
+            margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    nav {
+        display: flex;
+        background-color: rgb(235, 232, 232);
+        padding: 22px 0 17px 0;
+        border-bottom: 0.5px solid;
+    }
+    nav hr3 {
+        margin: 0 0 0 17px;
+        font-weight: bold;
+    }
+    nav span {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(41, 41, 41);
+        margin: 8px 0 10px 20px;
+    }
+    nav p {
+        display: flex;
+        margin: 0 0 0 760px;
+    }
+    nav p img {
+        height: 34px;
+        margin-right: 23px;
+    }
+    nav b {
+        display: flex;
+        margin: 6px 0 0 10px;
+    }
+    div.isi {
+        display: flex;
+    }
+    table.1 { 
+        width: 100px;
+        margin-left: 100px;
+    }
+    tr td.ini hr {
+        color:rgb(199, 197, 197);
+        width: 700px;
+    }
+    table.summary {
+        width: 27%;
+        padding: 30px;
+        display:flex;
+        margin-left: 300px;
+        background-color:rgb(235, 232, 232);
+    }
+    td.dalemsummary {
+        color: rgb(255, 255, 255);
+        width: 160px;
+    }
+    div.kategoribawah {
+        border-top: 1px solid;
+        display: flex;
+        padding: 20px 0 30px 0;
+    }
+    footer {
+        background-color: rgb(235, 232, 232);
+        width: 100%;
+    }
+    ul.footer {
+        background-color: rgb(235, 232, 232);
+        width: 300px;
+        margin: 0 0 0 850px;
+    }
+    td input {
+        width: 90px;
+    }
