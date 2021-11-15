@@ -1,0 +1,40 @@
+div.box_1atas {
+    position: relative;
+    width: 1000px;
+    height: 150px;
+    background: darksalmon;
+    margin: 20px;
+}
+div.box_2tengah {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background: rgb(185, 206, 162);
+    margin: 20px;
+}
+div.box_3tengah {
+    position: relative;
+    width: 670px;
+    height: 250px;
+    background: rgb(230, 223, 185);
+    margin: 20px;
+    left: 330px;
+    bottom: 270px;
+}
+div.box_4bawah {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background: rgb(185, 206, 162);
+    margin: 20px;
+    bottom: 270px;
+}
+div.box_5bawah {
+    position: relative;
+    width: 670px;
+    height: 250px;
+    background: rgb(230, 223, 185);
+    margin: 20px;
+    left: 330px;
+    bottom: 540px;
+}
