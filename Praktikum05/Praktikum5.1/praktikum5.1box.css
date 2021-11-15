@@ -1,0 +1,36 @@
+*{
+    margin: 10px;
+}
+div.box1 p {
+    position: absolute;
+    width: 200px;
+    height: 600px;
+    background-color: rgb(233, 187, 225);
+    left: 70px;
+    top: 8px;
+}
+div.box2 p {
+    position: relative;
+    width: 200px;
+    height: 600px;
+    background-color: rgb(195, 170, 218);
+    left: 360px;
+    bottom: 3px;
+}
+div.box3 p {
+    position: absolute;
+    width: 200px;
+    height: 600px;
+    background-color: rgb(163, 186, 230);
+    left: 710px;
+    top: 6px;
+}
+div.box4 p {
+    position: absolute;
+    width: 200px;
+    height: 600px;
+    background-color: rgb(175, 231, 175);
+    right: 10px;
+    left: 1060px;
+    bottom: 147px;
+}
