@@ -1,0 +1,49 @@
+* {
+    margin: 10px;
+}
+div.boxatas1 {
+    position: absolute;
+    background-color: rgb(211, 102, 120);
+    width: 350px;
+    height: 150px;
+}
+.boxatas2 {
+    position: absolute;
+    background-color: rgb(240, 203, 203);
+    width: 700px;
+    height: 150px;
+    top: 20px;
+    left: 400px;
+}
+.boxtengah1 {
+    position: relative;
+    background-color: rgb(224, 41, 209);
+    width: 350px;
+    height: 480px;
+    left: 1px;
+    top: 180px;
+}
+.boxtengah2 {
+    position: absolute;
+    background-color: rgb(219, 45, 141);
+    width: 450px;
+    height: 480px;
+    bottom: 85px;
+    left: 400px;
+}
+.boxtengah3 {
+    position: relative;
+    background-color: rgb(223, 201, 173);
+    width: 225px;
+    height: 480px;
+    bottom: 310px;
+    left: 857px;
+}
+.boxbawahsatusatunya {
+    position: relative;
+    background-color: rgb(207, 236, 177);
+    width: 1080px;
+    height: 150px;
+    bottom: 298px;
+    left: 4px;
+}
