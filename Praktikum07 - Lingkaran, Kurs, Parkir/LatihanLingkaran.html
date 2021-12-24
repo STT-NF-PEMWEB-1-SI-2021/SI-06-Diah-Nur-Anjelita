@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Luas Lingkaran & Keliling - Diah Nur </title>
+
+    <style>
+        .stylebuattulisan {
+            color: rgb(150, 15, 15);
+        }
+        .styleinput {
+            color: rgb(10, 5, 5);
+            background-color: rgb(255, 200, 200);
+        }
+        .styletombol {
+            background-color: rgb(255, 200, 200);
+            color:vrgb(10, 5, 5);
+        }
+        .stylehasil {
+            color: rgb(150, 15, 15);
+        }
+        span {
+            color: rgb(150, 15, 15);
+        }
+    </style>
+
+    <script>
+        function hitung() {
+            const PHI = 3.14 
+            let jarijari = document.getElementById("bilangansatu").value;
+            console.log("Jari-jari nya adalah : " + jarijari);
+            let luas = PHI * jarijari * jarijari;
+            let keliling = 2.0 * PHI * jarijari;
+            console.log("Luas nya adalah : " + luas);
+            console.log("Keliling nya adalah : " + keliling);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "luas : " + luas + "\nkeliling : " + keliling;
+        }
+    </script>
+</head>
+<body>
+    <h3>Menghitung Luas & Keliling Lingkaran</h3>
+    <p class="stylebuattulisan">Masukan Jari-Jari Lingkaran : </p>
+    <input type="number" value="" class="styleinput" size="11" id="bilangansatu"/>
+    <button onclick="hitung()" class="styletombol">Hitung</button>
+    <br/>
+    <p class="stylehasil">Hasil : </p> <span id="hasil"></span>
+</body>
+</html>
