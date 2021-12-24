@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menghitung Biaya Parkir - Diah Nur </title>
+
+    <style>
+        p {
+            color: rgb(104, 135, 136);
+        }
+        #awal {
+            color: rgb(51, 50, 50);
+            background-color: rgb(168, 227, 228);
+        }
+        #akhir {
+            color:rgb(51, 50, 50);
+            background-color: rgb(168, 227, 228);
+        }
+        .tombolparkir { 
+            margin-top: 15px;
+            color:rgb(51, 50, 50);
+            background-color: rgb(168, 227, 228);
+        }
+        #hasilBiaya {
+            color:rgb(104, 135, 136);
+        }
+    </style>
+
+    <script>
+        function hitungParkir() {
+            let jamMasuknya = document.getElementById("awal").value;
+            let jamKeluarnya = document.getElementById("akhir").value;
+            let selisih = jamMasuknya - jamKeluarnya;
+            let hasilBiaya =0;
+            const tarifdiAwal = 3000;
+            const tarifperJAM = 1000;
+            if(hasilBiaya < 2) {
+                hasilBiaya = tarifdiAwal;
+            }else{
+                let tambahan_jam = hasilBiaya - 2;
+                hasilBiaya = tarifdiAwal + (tarifperJAM * tambahan_jam);
+            } 
+            let area_Biaya = document.getElementById("hasilBiaya");
+            area_Biaya.innerHTML = "Biaya Parkir " + hasilBiaya;
+        }
+    </script>
+
+</head>
+<body>
+    <h3>Menghitung Biaya Parkir</h3>
+    <p> Jam Masuk : </p> <input type="number" value="" size="15" id="awal"/>
+    <br/>
+    <p> Jam Keluar: </p> <input type="number" value="" size="15" id="akhir"/>
+    <br/>
+    <button onclick="hitungParkir()" class="tombolparkir">Biaya Parkir</button>
+    <span id="hasilBiaya"></span>
+</body>
+</html>
