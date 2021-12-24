@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menghitung Kurs - Diah Nur </title>
+
+    <style>
+        .masukannilai {
+            color: salmon;
+        }
+        .tombolhasil {
+            background-color: salmon;
+            color: rgb(65, 59, 59);
+        }
+        .hasilnya {
+            color: salmon;
+        }
+        #hasil {
+            color: salmon;
+        }
+        #dollarnya {
+            background-color: salmon;
+            color:rgb(65, 59, 59);
+        }
+    </style>
+
+    <script>
+        function hitung() {
+            const rupiah = 14650;
+            let dollar = document.getElementById("dollarnya").value;
+            console.log("Dollar : " + dollar);
+            let kurs = rupiah * dollar;
+            console.log("Kurs Dollar : " + dollar);
+            let hasil = document.getElementById("hasil");
+            hasil.innerHTML = "Rp." + kurs;
+
+        }
+    </script>
+
+</head>
+<body>
+    <h3>Menghitung Kurs Rupiah</h3>
+
+    <p class="masukannilai">Masukan Nilai Dollar : </p>
+    
+    <input type="number" value="" size="15" id="dollarnya">
+
+    <button onclick="hitung()" size="18" class="tombolhasil"> Hasil </button>
+
+    <br/>
+
+    <p class="hasilnya">Hasil : </p> <span id="hasil"></span>
+</body>
+</html>
