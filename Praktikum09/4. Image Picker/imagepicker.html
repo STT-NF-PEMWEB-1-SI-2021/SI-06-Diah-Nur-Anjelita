@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 4. Image Picker - Diah Nur A </title>
+    <script src="imagepicker.js"></script>
+    <style>
+        body {
+            background-color: rgb(221, 221, 255);
+        }
+        .dropdown {
+            background-color: lavender;
+            width: 100px;
+        }
+        span {
+            color:rgb(20, 22, 22);
+        }
+        #pilihan {
+            padding: 10px;
+            background-color: lavender;
+            color:rgb(20, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span>5 Hewan Langka di Dunia</span>
+        <select id="pilihan" onchange="fungsi()">
+            <option value="gajah">Gajah Sri Lanka</option>
+            <option value="lumbalumba">Lumba Lumba Vaquita</option>
+            <option value="orangutan">Orang Utan</option>
+            <option value="pandamerah">Panda Merah</option>
+            <option value="penyubelimbing">Penyu Belimbing</option>
+        </select>
+        
+        <div id="isigambar"></div>
+    </div>
+
+</body>
+</html>
